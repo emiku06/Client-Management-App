@@ -20,7 +20,7 @@ public class CSVReader {
             }
 
         } catch (Exception e){
-            System.out.println(e);
+           e.printStackTrace();
         }
         return clientList;
     }
