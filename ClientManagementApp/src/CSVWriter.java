@@ -12,7 +12,7 @@ public class CSVWriter {
             bw.append(line).append("\n");
 
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
 
     }
