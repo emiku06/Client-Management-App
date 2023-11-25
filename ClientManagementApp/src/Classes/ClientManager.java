@@ -20,12 +20,15 @@ public class ClientManager implements Manager {
                 break;
             case 2:
                 service.updateClient(client.getId(), client,clients);
+                break;
             case 3:
                 service.removeClient(client.getId(), clients);
-            case 5:
-            case 0:
             default:
-
+                 try {
+                    throw new Exception("wrong command");
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
         }
     }
 
